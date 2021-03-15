@@ -23,7 +23,7 @@ a {
 }
 .btn:hover {
   opacity: 0.8;
-  box-shadow: 3px 5px 5px #e6e6e6;
+  box-shadow: 3px 5px 5px #cccccc;
 }
 
 .fas {
@@ -32,6 +32,10 @@ a {
 
 .list__item > .fas {
   margin: 0rem 0.7rem 0rem 0rem;
+}
+
+.instructions__item > .fas {
+  color: #7e7e7e;
 }
 
 .fa-utensils {
@@ -92,6 +96,9 @@ a {
   background: #f6f6f6;
   padding: 1rem 0 3rem 0;
 }
+.container--white {
+  padding: 2rem 1rem 3rem 1rem;
+}
 
 .localisation {
   text-align: center;
@@ -123,6 +130,68 @@ a {
   font-size: 1.1rem;
   margin-top: 0;
   margin-bottom: 1.5rem;
+}
+
+.instructions {
+  list-style: none;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-row-gap: 1.5rem;
+  padding-left: 1rem;
+}
+@media screen and (min-width: 768px) {
+  .instructions {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1.5rem;
+    grid-template-rows: 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .instructions {
+    grid-column-gap: 7rem;
+  }
+}
+.instructions__item {
+  background: #f6f6f6;
+  border-radius: 20px;
+  padding: 0.5rem 1rem 0.5rem 1rem;
+  box-shadow: 3px 5px 5px #e6e6e6;
+  position: relative;
+  z-index: 1;
+}
+.instructions__item > .item__number {
+  background: #9356dc;
+  color: white;
+  border-radius: 50% 50%;
+  width: 1rem;
+  padding: 0.2rem;
+  text-align: center;
+  font-size: 0.9rem;
+  position: absolute;
+  bottom: 30%;
+  left: -0.7rem;
+}
+.instructions__item::after {
+  transition: opacity 150ms;
+}
+.instructions__item:hover {
+  background: transparent;
+  box-shadow: 3px 5px 5px #cccccc;
+}
+.instructions__item:hover > .fas {
+  color: #9356dc;
+}
+.instructions__item:hover::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: #e4d5f6;
+  border-radius: 20px;
+  z-index: -1;
+  opacity: 0.3;
 }
 
 /*# sourceMappingURL=styles.css.map */

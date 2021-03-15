@@ -7,4 +7,7 @@
     background: map-get($map: $bg-greys, $key: light);
     padding: 1rem 0 3rem 0;
   }
+  &--white {
+    padding: 2rem 1rem 3rem 1rem;
+  }
 }

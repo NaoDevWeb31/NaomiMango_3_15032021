@@ -13,7 +13,18 @@
 @mixin box-shadow($state) {
   @if ($state == normal) {
     box-shadow: 3px 5px 5px black-shadow-hue(light);
-  } @else if ($state == hover) ⎮⎮ ($state == focus) {
+  } @else if ($state == hover) ⎮⎮ ($state == focus) ⎮⎮ ($state == btn-normal) {
     box-shadow: 3px 5px 5px black-shadow-hue(dark);
+  } @else if ($state == btn-hover) ⎮⎮ ($state == btn-focus) {
+    box-shadow: 3px 5px 5px black-shadow-hue(darker);
   }
+}
+
+@mixin pseudo-pos {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }

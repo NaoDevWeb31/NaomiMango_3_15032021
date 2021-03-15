@@ -6,6 +6,11 @@
 .list__item > .fas {
     margin: 0rem 0.7rem 0rem 0rem;
 }
+
+.instructions__item > .fas {
+    color: $grey-icons;
+}
+
 .fa-utensils {
     font-size: 0.9rem;
 }

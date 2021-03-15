@@ -29,3 +29,56 @@
         margin-bottom: 1.5rem;
     }
 }
+
+.instructions{
+    list-style: none;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 1.5rem;
+    padding-left: 1rem;
+    @include breakpoints(tab) {
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 1.5rem;
+        grid-template-rows: 1fr;
+      }
+    @include breakpoints(desktop) {
+        grid-column-gap: 7rem;
+      }
+    &__item{
+        background: map-get($bg-greys, light);
+        border-radius: $bd-rad;
+        padding: 0.5rem 1rem 0.5rem 1rem;
+        @include box-shadow(normal);
+        position: relative;
+        z-index: 1;
+        & > .item__number{
+            background: $color-primary;
+            color: white;
+            border-radius: 50% 50%;
+            width: 1rem;
+            padding: 0.2rem;
+            text-align: center;
+            font-size: 0.9rem;
+            position: absolute;
+            bottom: 30%;
+            left: -0.7rem;
+        }
+        &::after{
+            transition: opacity 150ms;
+        }
+        &:hover{
+            background: transparent;
+            @include box-shadow(hover);
+            & > .fas {
+                color: $color-primary;
+            }
+            &::after{
+                @include pseudo-pos;
+                background: lighten($color-primary, 30%);
+                border-radius: $bd-rad;
+                z-index: -1;
+                opacity: 0.3;
+            }
+        }
+    }
+}
