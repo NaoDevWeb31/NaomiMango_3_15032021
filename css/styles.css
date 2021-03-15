@@ -1,0 +1,17 @@
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: medium;
+}
+
+.header {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 5px #cccccc;
+  margin: -0.5rem 0rem 0.3rem -0.5rem;
+  padding: 1rem 1rem 0.5rem 0rem;
+}
+.header__logo {
+  width: 10rem;
+}
+
+/*# sourceMappingURL=styles.css.map */
