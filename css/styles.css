@@ -3,6 +3,12 @@ body {
   font-size: medium;
 }
 
+h1 {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+  font-size: 17px;
+}
+
 .header {
   width: 100%;
   text-align: center;
@@ -12,6 +18,25 @@ body {
 }
 .header__logo {
   width: 10rem;
+}
+
+.footer {
+  background: #353535;
+  color: white;
+  margin: auto -0.5rem -1rem -1rem;
+  padding: 0.5rem 0rem 1rem 1.5rem;
+}
+.footer__heading {
+  margin-bottom: 1.5rem;
+}
+.footer__list {
+  display: flex;
+  flex-direction: column;
+}
+.footer__list > .list__item {
+  margin: 0.7rem 0rem;
+  margin-block-start: 0rem;
+  font-size: 15px;
 }
 
 /*# sourceMappingURL=styles.css.map */
