@@ -8,4 +8,12 @@
         @content;
       }
     }
+}
+
+@mixin box-shadow($state) {
+  @if ($state == normal) {
+    box-shadow: 3px 5px 5px black-shadow-hue(light);
+  } @else if ($state == hover) ⎮⎮ ($state == focus) {
+    box-shadow: 3px 5px 5px black-shadow-hue(dark);
   }
+}

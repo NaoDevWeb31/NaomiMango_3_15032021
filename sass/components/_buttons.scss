@@ -1,0 +1,11 @@
+.btn{
+    color: white;
+    background: $colors-gradient;
+    padding: 1rem;
+    border-radius: $bd-rad + 10;
+    @include box-shadow(normal);
+    &:hover {
+        opacity: 0.8;
+        @include box-shadow(hover);
+    }
+}
