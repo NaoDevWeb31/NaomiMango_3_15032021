@@ -1,0 +1,6 @@
+.container{
+    &--md {
+        background: map-get($bg-greys, md);
+        margin: 0rem -0.5rem;
+      }
+}

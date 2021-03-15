@@ -1,0 +1,12 @@
+.localisation{
+    text-align: center;
+    &__search{
+        border: none;
+        background: transparent;
+        font-size: medium;
+        &::placeholder {
+            color: black;
+            font-size: 16px;
+          }
+    }
+}
