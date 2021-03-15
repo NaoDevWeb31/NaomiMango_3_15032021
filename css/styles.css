@@ -70,9 +70,15 @@ a {
   font-size: 15px;
 }
 
+.container {
+  margin: 0rem -0.5rem;
+}
 .container--md {
   background: #eaeaea;
-  margin: 0rem -0.5rem;
+}
+.container--light {
+  background: #f6f6f6;
+  padding: 1rem 0 3rem 0;
 }
 
 .localisation {
@@ -86,6 +92,25 @@ a {
 .localisation__search::placeholder {
   color: black;
   font-size: 16px;
+}
+
+.presentation {
+  text-align: center;
+  margin: 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.presentation__heading {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+.presentation__caption {
+  font-weight: 300;
+  font-size: 1.1rem;
+  margin-top: 0;
+  margin-bottom: 1.5rem;
 }
 
 /*# sourceMappingURL=styles.css.map */

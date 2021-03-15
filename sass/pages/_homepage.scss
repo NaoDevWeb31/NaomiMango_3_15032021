@@ -10,3 +10,22 @@
           }
     }
 }
+
+.presentation{
+    text-align: center;
+    margin: 0 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__heading {
+        font-size: 1.4rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+    &__caption {
+        font-weight: 300;
+        font-size: 1.1rem;
+        margin-top: 0;
+        margin-bottom: 1.5rem;
+    }
+}

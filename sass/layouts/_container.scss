@@ -1,6 +1,10 @@
 .container{
-    &--md {
-        background: map-get($bg-greys, md);
-        margin: 0rem -0.5rem;
-      }
+  margin: 0rem -0.5rem;
+  &--md {
+    background: map-get($bg-greys, md);
+  }
+  &--light{
+    background: map-get($map: $bg-greys, $key: light);
+    padding: 1rem 0 3rem 0;
+  }
 }
