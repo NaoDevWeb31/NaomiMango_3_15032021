@@ -50,6 +50,16 @@ a {
   display: flex;
   flex-direction: column;
 }
+@media screen and (min-width: 1024px) {
+  .footer__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 90%;
+  }
+}
 .footer__list > .list__item {
   margin: 0.7rem 0rem;
   margin-block-start: 0rem;

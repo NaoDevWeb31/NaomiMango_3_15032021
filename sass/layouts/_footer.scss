@@ -9,6 +9,14 @@
     &__list {
         display: flex;
         flex-direction: column;
+        @include breakpoints(desktop) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            text-align: left;
+            width: 90%;
+          }
         & > .list__item {
             margin: 0.7rem 0rem;
             margin-block-start: 0rem;
