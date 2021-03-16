@@ -3,10 +3,6 @@
     margin: 1rem;
 }
 
-.list__item > .fas {
-    margin: 0rem 0.7rem 0rem 0rem;
-}
-
 .instructions__item > .fas {
     color: $grey-icons;
 }
@@ -16,7 +12,13 @@
 .fa-list-ul {
     font-size: 1.2rem;
 }
+.fa-heart {
+    font-size: 1.5rem;
+}
 
+.list__item > .fas {
+    margin: 0rem 0.7rem 0rem 0rem;
+}
 .fa-utensils {
     font-size: 0.9rem;
 }

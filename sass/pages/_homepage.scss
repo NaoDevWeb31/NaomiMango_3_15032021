@@ -83,3 +83,76 @@
         }
     }
 }
+
+.restaurants {
+    margin: 0 1rem;
+    @include breakpoints(tab){
+        margin: 0 2rem;
+    }
+}
+.menus-grid {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-row-gap: 1.3rem;
+    @include breakpoints(tab) {
+      grid-template-rows: repeat(2, 1fr);
+      grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 2rem;
+      grid-row-gap: 2rem;
+    }
+    @include breakpoints(desktop){
+        grid-column-gap: 3rem;
+    }
+}
+.menu-prev{
+    background: white;
+    border-radius: $bd-rad;
+    display: grid;
+    grid-template-areas:
+    "image image"
+    "heading heart";
+    @include box-shadow(normal);
+    &__image{
+        position: relative;
+        grid-area: image;
+        & > img{
+            object-fit: cover;
+            object-position: 50% 70%;
+            width: 100%;
+            height: 11rem;
+            border-radius: $bd-rad $bd-rad 0px 0px;
+        }
+        & > .img--portrait{
+            object-position: 50% 61%;
+        }
+        & > .image__tag{
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: $color-tertiary;
+            padding: 0.5rem;
+            color: $green-txt;
+            border-radius: $bd-rad * 0.15;
+            font-size: small;
+        }
+    }
+    &__heading{
+        margin: 0 1rem;
+        grid-area: heading;
+        & > .heading__title {
+            font-weight: 600;
+            font-size: 17px;
+            margin-bottom: 0.5rem;
+        }
+        & > .heading__district {
+            font-weight: 300;
+            margin-top: 0;
+        }
+    }
+    &:hover {
+        @include box-shadow(hover);
+    }
+    &:active{
+        color: $color-secondary;
+    }
+}
