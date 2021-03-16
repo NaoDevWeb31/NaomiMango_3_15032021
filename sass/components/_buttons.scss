@@ -3,9 +3,9 @@
     background: $colors-gradient;
     padding: 1rem;
     border-radius: $bd-rad + 10;
-    @include box-shadow(btn-normal);
+    @include btn-shadow(btn-normal);
     &:hover {
         opacity: 0.8;
-        @include box-shadow(btn-hover);
+        @include btn-shadow(btn-hover);
     }
 }

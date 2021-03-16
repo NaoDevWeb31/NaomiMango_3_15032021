@@ -42,12 +42,13 @@
         grid-template-rows: 1fr;
       }
     @include breakpoints(desktop) {
-        grid-column-gap: 7rem;
+        grid-column-gap: 6rem;
       }
     &__item{
         background: map-get($bg-greys, light);
         border-radius: $bd-rad;
-        padding: 0.5rem 1rem 0.5rem 1rem;
+        padding: 0.5rem 1rem;
+        align-self: center;
         @include box-shadow(normal);
         position: relative;
         z-index: 1;

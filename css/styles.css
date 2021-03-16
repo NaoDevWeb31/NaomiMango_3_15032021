@@ -23,7 +23,7 @@ a {
 }
 .btn:hover {
   opacity: 0.8;
-  box-shadow: 3px 5px 5px #cccccc;
+  box-shadow: 3px 5px 5px #999999;
 }
 
 .fas {
@@ -36,6 +36,14 @@ a {
 
 .instructions__item > .fas {
   color: #7e7e7e;
+}
+
+.fa-mobile-alt {
+  font-size: 1.4rem;
+}
+
+.fa-list-ul {
+  font-size: 1.2rem;
 }
 
 .fa-utensils {
@@ -148,13 +156,14 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .instructions {
-    grid-column-gap: 7rem;
+    grid-column-gap: 6rem;
   }
 }
 .instructions__item {
   background: #f6f6f6;
   border-radius: 20px;
-  padding: 0.5rem 1rem 0.5rem 1rem;
+  padding: 0.5rem 1rem;
+  align-self: center;
   box-shadow: 3px 5px 5px #e6e6e6;
   position: relative;
   z-index: 1;

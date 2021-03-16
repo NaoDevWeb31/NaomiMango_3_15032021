@@ -2,8 +2,8 @@
     @if ($hue == light) {
       @return lighten($color: black, $amount: map-get($blacks-amount, lower));
     } @else if ($hue == dark) {
-      @return lighten($color: black, $amount: map-get($blacks-amount, higher));
+      @return lighten($color: black, $amount: map-get($blacks-amount, high));
     } @else if ($hue == darker) {
-      @return lighten($color: black, $amount: map-get($blacks-amount, x-higher));
+      @return lighten($color: black, $amount: map-get($blacks-amount, higher));
     }
 }
