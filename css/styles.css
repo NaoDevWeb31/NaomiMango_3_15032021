@@ -18,6 +18,12 @@ a {
   text-decoration: none;
 }
 
+.heading__title {
+  font-family: "Shrikhand", cursive;
+  font-weight: 300;
+  font-size: 1.8rem;
+}
+
 .fas {
   margin: 1rem;
 }
@@ -370,6 +376,12 @@ a {
   .courses-prev__image {
     height: 20rem;
   }
+}
+
+.heading {
+  display: flex;
+  justify-content: space-between;
+  margin: -1rem -1rem -1rem 0rem;
 }
 
 /*# sourceMappingURL=styles.css.map */
