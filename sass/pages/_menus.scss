@@ -1,0 +1,16 @@
+.courses{
+    display: flex;
+    flex-direction: column;
+    &-prev{
+        margin: -0.3rem -0.5rem 0rem -0.5rem;
+        overflow: hidden;
+        &__image{
+            object-fit: cover;
+            width: 107%;
+            object-position: center left;
+            @include breakpoints(tab){
+                height: 20rem;
+            }
+        }
+    }
+}
