@@ -32,15 +32,6 @@
         transform: scale(0);
         transition: all 250ms cubic-bezier(1, 0, 0.4, 1);
     }
-    &:active{
-        & > .empty{
-            opacity: 0;
-        }
-        & > .filled{
-            opacity: 1;
-            transform: scale(1);
-        }
-    }
     @include breakpoints(desktop){
         &:hover{
             & > .empty{
@@ -50,6 +41,15 @@
                 opacity: 1;
                 transform: scale(1);
             }
+        }
+    }
+    &:focus, &:active{
+        & > .empty{
+            opacity: 0;
+        }
+        & > .filled{
+            opacity: 1;
+            transform: scale(1);
         }
     }
 }

@@ -93,15 +93,12 @@
 .menus-grid {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
-    grid-row-gap: 1.3rem;
+    grid-row-gap: 1rem;
     @include breakpoints(tab) {
       grid-template-rows: repeat(2, 1fr);
       grid-template-columns: repeat(2, 1fr);
-      grid-column-gap: 2rem;
-      grid-row-gap: 2rem;
-    }
-    @include breakpoints(desktop){
-        grid-column-gap: 3rem;
+      grid-column-gap: 1.5rem;
+      grid-row-gap: 1.5rem;
     }
 }
 .menu-prev{
@@ -112,6 +109,8 @@
     "image image"
     "heading heart";
     @include box-shadow(normal);
+    transform: scale(0.95);
+    transition: transform 250ms ease-in-out;
     &__image{
         position: relative;
         grid-area: image;
@@ -133,7 +132,7 @@
             padding: 0.5rem;
             color: $green-txt;
             border-radius: $bd-rad * 0.15;
-            font-size: small;
+            font-size: 14.5px;
         }
     }
     &__heading{
@@ -151,6 +150,7 @@
     }
     &:hover {
         @include box-shadow(hover);
+        transform: scale(1);
     }
     &:active{
         color: $color-secondary;
