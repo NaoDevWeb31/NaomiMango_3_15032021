@@ -18,6 +18,43 @@ a {
   text-decoration: none;
 }
 
+.fas {
+  margin: 1rem;
+}
+
+.fa-arrow-left {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
+.instructions__item > .fas {
+  color: #7e7e7e;
+}
+
+.fa-mobile-alt {
+  font-size: 1.4rem;
+}
+
+.fa-list-ul {
+  font-size: 1.2rem;
+}
+
+.fa-heart {
+  font-size: 1.5rem;
+}
+
+.list__item > .fas {
+  margin: 0rem 0.7rem 0rem 0rem;
+}
+
+.fa-utensils {
+  font-size: 0.9rem;
+}
+
+.fa-hands-helping {
+  font-size: 0.7rem;
+}
+
 .btn {
   color: white;
   background: linear-gradient(170deg, #ff79da, #9356dc);
@@ -73,43 +110,6 @@ a {
 .menu-prev__btn:focus > .filled, .menu-prev__btn:active > .filled {
   opacity: 1;
   transform: scale(1);
-}
-
-.fas {
-  margin: 1rem;
-}
-
-.fa-arrow-left {
-  font-size: 1.2rem;
-  margin: 0.5rem;
-}
-
-.instructions__item > .fas {
-  color: #7e7e7e;
-}
-
-.fa-mobile-alt {
-  font-size: 1.4rem;
-}
-
-.fa-list-ul {
-  font-size: 1.2rem;
-}
-
-.fa-heart {
-  font-size: 1.5rem;
-}
-
-.list__item > .fas {
-  margin: 0rem 0.7rem 0rem 0rem;
-}
-
-.fa-utensils {
-  font-size: 0.9rem;
-}
-
-.fa-hands-helping {
-  font-size: 0.7rem;
 }
 
 .header {
