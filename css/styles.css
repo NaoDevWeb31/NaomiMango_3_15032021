@@ -79,6 +79,11 @@ a {
   margin: 1rem;
 }
 
+.fa-arrow-left {
+  font-size: 1.2rem;
+  margin: 0.5rem;
+}
+
 .instructions__item > .fas {
   color: #7e7e7e;
 }
@@ -114,8 +119,18 @@ a {
   margin: -0.5rem 0rem 0.3rem -0.5rem;
   padding: 1rem 1rem 0.5rem 0rem;
 }
+.header--menu {
+  display: grid;
+  grid-template-columns: 10% 90%;
+  align-items: center;
+  justify-items: center;
+  padding: 0.8rem 0.5rem 0.5rem 0.5rem;
+}
 .header__logo {
   width: 10rem;
+}
+.header__logo--menu {
+  margin-left: -3.15rem;
 }
 
 .footer {
