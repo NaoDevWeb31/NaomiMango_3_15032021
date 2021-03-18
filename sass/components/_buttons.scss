@@ -4,6 +4,14 @@
   padding: 1rem;
   border-radius: $bd-rad + 10;
   @include btn-shadow(btn-normal);
+  width: fit-content;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  &--menus {
+    width: 10rem;
+  }
   &:hover {
     opacity: 0.8;
     @include btn-shadow(btn-hover);

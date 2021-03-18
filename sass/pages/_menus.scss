@@ -29,6 +29,12 @@
   display: grid;
   grid-template-rows: repeat(3, 1fr);
   grid-row-gap: 1rem;
+  margin-bottom: 3rem;
+  @include breakpoints(desktop) {
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 1rem;
+    grid-template-rows: 1fr;
+  }
 }
 .course {
   &__heading {
@@ -50,11 +56,13 @@
     "heading heading checkbox"
     "caption price checkbox";
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 1fr 15% 20%;
+  grid-template-columns: 1fr 15% 17%;
   background: white;
   border-radius: $bd-rad;
   @include box-shadow(normal);
   height: 4.5rem;
+  overflow: hidden;
+  cursor: pointer;
   &__heading {
     grid-area: heading;
     margin: 0.8rem 0.8rem 0rem 0.8rem;
@@ -66,7 +74,7 @@
     grid-area: caption;
     font-weight: 300;
     font-size: 15px;
-    margin: 0.3rem 0.5rem 0.5rem 0.8rem;
+    margin: 0.3rem 0rem 0.5rem 0.8rem;
     @include text-overflow;
   }
   &__price {
@@ -76,14 +84,38 @@
     font-weight: 500;
     font-size: 15px;
     margin: 0rem 0.5rem;
+    text-align: center;
+    transform: translateX(160%);
+    transition: transform 350ms cubic-bezier(0.54, 0.13, 0.65, 0.82);
+    @include breakpoints(tab) {
+      font-size: 17px;
+    }
   }
   &__checkbox {
     grid-area: checkbox;
     background: $color-tertiary;
     border-radius: 0 $bd-rad * 0.75 $bd-rad * 0.75 0;
-    margin-left: 1rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    transform: translateX(100%);
+    transform-origin: right top;
+    transition: transform 400ms cubic-bezier(0.86, 0.06, 0.16, 0.84);
+    & > .fa-check-circle {
+      transform: rotate(0);
+      transition: transform 300ms cubic-bezier(0.85, 0.45, 0.18, 0.99) 100ms;
+    }
+  }
+  &:hover {
+    @include box-shadow(hover);
+    & > .dish__price {
+      transform: translateX(0);
+    }
+    & > .dish__checkbox {
+      transform: translateX(0);
+      & > .fa-check-circle {
+        transform: rotate(1turn);
+      }
+    }
   }
 }
