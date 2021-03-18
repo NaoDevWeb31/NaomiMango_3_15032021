@@ -1,13 +1,13 @@
 @mixin breakpoints($screen) {
-    @if ($screen == tab) {
-      @media screen and (min-width: map-get($map: $breakpoints, $key: tab)) {
-        @content;
-      }
-    } @else if ($screen == desktop) {
-      @media screen and (min-width: map-get($map: $breakpoints, $key: desktop)) {
-        @content;
-      }
+  @if ($screen == tab) {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: tab)) {
+      @content;
     }
+  } @else if ($screen == desktop) {
+    @media screen and (min-width: map-get($map: $breakpoints, $key: desktop)) {
+      @content;
+    }
+  }
 }
 
 @mixin box-shadow($state) {
@@ -32,4 +32,10 @@
   right: 0;
   bottom: 0;
   left: 0;
+}
+
+@mixin text-overflow {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }

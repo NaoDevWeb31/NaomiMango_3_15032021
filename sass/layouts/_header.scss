@@ -1,20 +1,20 @@
-.header{
-    width: 100%;
-    text-align: center;
-    box-shadow: 0px 4px 5px lighten($color: black, $amount: 80);
-    margin: -0.5rem 0rem 0.3rem -0.5rem;
-    padding: 1rem 1rem .5rem 0rem;
+.header {
+  width: 100%;
+  text-align: center;
+  box-shadow: 0px 4px 5px lighten($color: black, $amount: 80);
+  margin: -0.5rem 0rem 0.3rem -0.5rem;
+  padding: 1rem 1rem 0.5rem 0rem;
+  &--menu {
+    display: grid;
+    grid-template-columns: 10% 90%;
+    align-items: center;
+    justify-items: center;
+    padding: 0.8rem 0.5rem 0.5rem 0.5rem;
+  }
+  &__logo {
+    width: 10rem;
     &--menu {
-        display: grid;
-        grid-template-columns: 10% 90%;
-        align-items: center;
-        justify-items: center;
-        padding: 0.8rem 0.5rem .5rem 0.5rem; 
+      margin-left: -3.15rem;
     }
-    &__logo{
-        width: 10rem;
-        &--menu{
-            margin-left: -3.15rem;
-        }
-    }
+  }
 }

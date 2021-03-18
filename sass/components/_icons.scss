@@ -1,32 +1,36 @@
-
 .fas {
-    margin: 1rem;
+  margin: 1rem;
 }
 
 .fa-arrow-left {
-    font-size: 1.2rem;
-    margin: 0.5rem;
+  font-size: 1.2rem;
+  margin: 0.5rem;
 }
 
 .instructions__item > .fas {
-    color: $grey-icons;
+  color: $grey-icons;
 }
 .fa-mobile-alt {
-    font-size: 1.4rem;
+  font-size: 1.4rem;
 }
 .fa-list-ul {
-    font-size: 1.2rem;
+  font-size: 1.2rem;
 }
 .fa-heart {
-    font-size: 1.5rem;
+  font-size: 1.5rem;
+}
+
+.fa-check-circle {
+  color: white;
+  font-size: 1.3rem;
 }
 
 .list__item > .fas {
-    margin: 0rem 0.7rem 0rem 0rem;
+  margin: 0rem 0.7rem 0rem 0rem;
 }
 .fa-utensils {
-    font-size: 0.9rem;
+  font-size: 0.9rem;
 }
 .fa-hands-helping {
-    font-size: 0.7rem;
+  font-size: 0.7rem;
 }
