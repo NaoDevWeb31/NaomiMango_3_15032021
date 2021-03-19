@@ -158,7 +158,7 @@ a {
   padding: 0.5rem 0rem 1rem 1.5rem;
 }
 .footer__heading {
-  margin-bottom: 1.3rem;
+  margin-bottom: 1rem;
 }
 .footer__list {
   display: flex;
@@ -175,8 +175,7 @@ a {
   }
 }
 .footer__list > .list__item {
-  margin: 0.7rem 0rem;
-  margin-block-start: 0rem;
+  margin: 0.3rem 0rem;
   font-size: 15px;
 }
 
@@ -195,12 +194,15 @@ a {
 }
 .container--menus {
   border-radius: 30px 30px 0px 0px;
-  margin-block-start: -3rem;
+  margin-top: -3rem;
   padding: 1rem 1rem 4rem 1rem;
 }
 
 .localisation {
   text-align: center;
+}
+.localisation__heading {
+  display: none;
 }
 .localisation__search {
   border: none;
@@ -345,10 +347,11 @@ a {
   top: 1rem;
   right: 1rem;
   background: #99e2d0;
-  padding: 0.5rem;
+  padding: 0.5rem 0.7rem;
   color: #1c8766;
   border-radius: 3px;
-  font-size: 14.5px;
+  font-size: 14px;
+  font-weight: 500;
 }
 .menu-prev__heading {
   margin: 0 1rem;
@@ -356,9 +359,9 @@ a {
 }
 .menu-prev__heading > .heading__title {
   font-family: "Roboto", sans-serif;
-  font-weight: 600;
-  font-size: 17px;
-  margin-bottom: 0.5rem;
+  font-weight: 500;
+  font-size: 18px;
+  margin-bottom: 0.3rem;
 }
 .menu-prev__heading > .heading__district {
   font-weight: 300;

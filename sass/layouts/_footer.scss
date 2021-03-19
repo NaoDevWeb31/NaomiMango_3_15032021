@@ -4,7 +4,7 @@
   margin: auto -0.5rem -1rem -1rem;
   padding: 0.5rem 0rem 1rem 1.5rem;
   &__heading {
-    margin-bottom: 1.3rem;
+    margin-bottom: 1rem;
   }
   &__list {
     display: flex;
@@ -18,8 +18,7 @@
       width: 90%;
     }
     & > .list__item {
-      margin: 0.7rem 0rem;
-      margin-block-start: 0rem;
+      margin: 0.3rem 0rem;
       font-size: 15px;
     }
   }

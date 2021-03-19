@@ -1,5 +1,8 @@
 .localisation {
   text-align: center;
+  &__heading {
+    display: none;
+  }
   &__search {
     border: none;
     background: transparent;
@@ -129,10 +132,11 @@
       top: 1rem;
       right: 1rem;
       background: $color-tertiary;
-      padding: 0.5rem;
+      padding: 0.5rem 0.7rem;
       color: $green-txt;
       border-radius: $bd-rad * 0.15;
-      font-size: 14.5px;
+      font-size: 14px;
+      font-weight: 500;
     }
   }
   &__heading {
@@ -140,9 +144,9 @@
     grid-area: heading;
     & > .heading__title {
       font-family: "Roboto", sans-serif;
-      font-weight: 600;
-      font-size: 17px;
-      margin-bottom: 0.5rem;
+      font-weight: 500;
+      font-size: 18px;
+      margin-bottom: 0.3rem;
     }
     & > .heading__district {
       font-weight: 300;
