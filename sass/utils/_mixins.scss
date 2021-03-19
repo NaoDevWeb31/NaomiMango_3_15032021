@@ -39,3 +39,21 @@
   overflow: hidden;
   white-space: nowrap;
 }
+
+@mixin courses-unveiling {
+  animation: courses-unveiling 900ms ease-out backwards;
+  @for $i from 0 through 2 {
+    &--#{$i} {
+      animation-delay: 300ms * $i;
+    }
+  }
+}
+
+@mixin dishes-unveiling {
+  animation: dishes-unveiling 900ms ease-out backwards;
+  @for $i from 0 through 9 {
+    &--#{$i} {
+      animation-delay: 100ms * $i;
+    }
+  }
+}

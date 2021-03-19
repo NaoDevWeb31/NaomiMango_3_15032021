@@ -22,19 +22,24 @@
     <meta property="og:description" content="Réservez des menus qui vous convient dans des restaurants d'exception"/>
 </head>
 <body>
+<!-- LOGO -->
     <header class="header">
         <a href="index.html">
             <img class="header__logo" src="img/logo/ohmyfood@2x.svg" alt="logo du site" title="Ohmyfood.com"/>
         </a>
     </header>
     <main>
+    <!-- LOCALISATION RESTO -->
         <section class="container container--md">
             <div class="localisation">
                 <h2 class="localisation__heading">Localisation</h2>
+            <!-- ICÔNE MAP -->
                 <label for="localisation__search"><i class="fas fa-map-marker-alt"></i></label>
+            <!-- LOCALISATION -->
                 <input type="text" id="localisation__search" class="localisation__search" name="localisation__search" placeholder="Paris, Belleville" aria-label="Saisie de ville"/>
             </div>
         </section>
+    <!-- PRÉSENTATION -->
         <section class="container container--light">
             <div class="presentation">
                 <h2 class="presentation__heading">Réservez le menu qui vous convient</h2>
@@ -42,20 +47,26 @@
                 <div class="btn">Explorer nos restaurants</div>
             </div>
         </section>
+    <!-- FONCTIONNEMENT -->
         <section class="container container--white">
+        <!-- GRILLE DES INSTRUCTIONS -->
             <div class="instructions-grid">
                 <h2>Fonctionnement</h2>
+            <!-- LISTE DES INSTRUCTIONS -->
                 <ul class="instructions">
+                <!-- INSTRUCTION 1 -->
                     <li class="instructions__item">
                         <div class="item__number">1</div>
                         <i class="fas fa-mobile-alt"></i>
                         Choisissez un restaurant
                     </li>
+                <!-- INSTRUCTION 2 -->
                     <li class="instructions__item">
                         <div class="item__number">2</div>
                         <i class="fas fa-list-ul"></i>
                         Composez votre menu
                     </li>
+                <!-- INSTRUCTION 3 -->
                     <li class="instructions__item">
                         <div class="item__number">3</div>
                         <i class="fas fa-store"></i>
@@ -64,10 +75,14 @@
                 </ul>
             </div>
         </section>
+    <!-- RESTAURANTS -->
         <section class="container container--light">
+        <!-- GRILLE DES RESTOS -->
             <div class="restaurants">
                 <h2>Restaurants</h2>
+            <!-- GRILLE DE RESTOS -->
                 <div class="menus-grid">
+                <!-- RESTO 1 -->
                     <a class="menu-prev" href="menu-palette.html">
                         <div class="menu-prev__image">
                             <img src="img/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="Photo du menu du restaurant La palette du goût" title="Cliquez ici pour composer votre menu"/>
@@ -82,7 +97,7 @@
                             <i class="fas fa-heart filled"></i>
                         </button>
                     </a>
-
+                <!-- RESTO 2 -->
                     <a class="menu-prev" href="menu-enchantée.html">
                         <div class="menu-prev__image" >
                             <img class="img--portrait" src="img/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo du menu du restaurant La note enchantée" title="Cliquez ici pour composer votre menu"/>
@@ -97,7 +112,7 @@
                             <i class="fas fa-heart filled"></i>
                         </button>
                     </a>
-
+                <!-- RESTO 3 -->
                     <a class="menu-prev" href="menu-française.html">
                         <div class="menu-prev__image">
                             <img src="img/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo du menu du restaurant À la française" title="Cliquez ici pour composer votre menu"/>
@@ -111,7 +126,7 @@
                             <i class="fas fa-heart filled"></i>
                         </button>
                     </a>
-
+                <!-- RESTO 4 -->
                     <a class="menu-prev" href="menu-délice.html">
                         <div class="menu-prev__image">
                             <img src="img/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo du menu du restaurant Le délice du sens" title="Cliquez ici pour composer votre menu"/>
@@ -130,15 +145,17 @@
         </section>
     </main>
     <footer class="footer">
+    <!-- LOGO -->
         <h1 class="footer__heading">
             ohmyfood
         </h1>
-        <div class="footer__list">
-            <p class="list__item"><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-            <p class="list__item"><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
-            <p class="list__item">Mentions légales</p>
-            <p class="list__item"><a href="mailto:">Contact</a></p>
-        </div>
+    <!-- LISTE DU FOOTER -->
+        <ul class="footer__list">
+            <li class="list__item"><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+            <li class="list__item"><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+            <li class="list__item">Mentions légales</li>
+            <li class="list__item"><a href="mailto:">Contact</a></li>
+        </ul>
     </footer>
 </body>
 </html>

@@ -7,6 +7,8 @@
     margin-bottom: 1rem;
   }
   &__list {
+    list-style: none;
+    padding: 0;
     display: flex;
     flex-direction: column;
     @include breakpoints(desktop) {

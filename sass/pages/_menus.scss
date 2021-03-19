@@ -34,7 +34,7 @@
 
 .courses-grid {
   display: grid;
-  grid-row-gap: 2rem;
+  grid-row-gap: 0.5rem;
   margin-bottom: 3rem;
   @include breakpoints(desktop) {
     grid-template-columns: repeat(3, 1fr);
@@ -47,14 +47,17 @@
     font-weight: 100;
     font-size: 16px;
     margin-bottom: 1.5rem;
+    @include courses-unveiling;
     & > .underline {
       border-bottom: $color-tertiary 3px solid;
       padding-bottom: 0.3rem;
     }
   }
   &__dishes {
+    list-style: none;
     display: grid;
     grid-row-gap: 1rem;
+    padding: 0;
   }
 }
 .dish {
@@ -70,6 +73,7 @@
   height: 4.5rem;
   overflow: hidden;
   cursor: pointer;
+  @include dishes-unveiling;
   &__heading {
     grid-area: heading;
     margin: 0.8rem 0.8rem 0rem 0.8rem;
