@@ -55,6 +55,7 @@
     @include box-shadow(normal);
     position: relative;
     z-index: 1;
+    font-weight: 500;
     & > .item__number {
       background: $color-primary;
       color: white;
@@ -89,6 +90,7 @@
 
 .restaurants {
   margin: 0 1rem;
+  padding-top: 1rem;
   @include breakpoints(tab) {
     margin: 0 2rem;
   }
@@ -111,6 +113,7 @@
   grid-template-areas:
     "image image"
     "heading heart";
+  grid-template-columns: 80% 20%;
   @include box-shadow(normal);
   transform: scale(0.95);
   transition: transform 250ms ease-in-out;
@@ -147,6 +150,7 @@
       font-weight: 500;
       font-size: 18px;
       margin-bottom: 0.3rem;
+      margin-top: 0.7rem;
     }
     & > .heading__district {
       font-weight: 300;

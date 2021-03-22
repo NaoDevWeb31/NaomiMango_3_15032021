@@ -288,6 +288,7 @@ a {
   box-shadow: 3px 5px 5px #e6e6e6;
   position: relative;
   z-index: 1;
+  font-weight: 500;
 }
 .instructions__item > .item__number {
   background: #9356dc;
@@ -326,6 +327,7 @@ a {
 
 .restaurants {
   margin: 0 1rem;
+  padding-top: 1rem;
 }
 @media screen and (min-width: 768px) {
   .restaurants {
@@ -352,6 +354,7 @@ a {
   border-radius: 20px;
   display: grid;
   grid-template-areas: "image image" "heading heart";
+  grid-template-columns: 80% 20%;
   box-shadow: 3px 5px 5px #e6e6e6;
   transform: scale(0.95);
   transition: transform 250ms ease-in-out;
@@ -390,6 +393,7 @@ a {
   font-weight: 500;
   font-size: 18px;
   margin-bottom: 0.3rem;
+  margin-top: 0.7rem;
 }
 .menu-prev__heading > .heading__district {
   font-weight: 300;
