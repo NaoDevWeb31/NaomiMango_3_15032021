@@ -1,5 +1,7 @@
 .localisation {
-  text-align: center;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
   &__heading {
     display: none;
   }
