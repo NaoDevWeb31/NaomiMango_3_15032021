@@ -107,6 +107,11 @@ a {
 }
 @media screen and (min-width: 768px) {
   .fa-check-circle {
+    font-size: 1.7rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .fa-check-circle {
     font-size: 1.5rem;
   }
 }
@@ -570,6 +575,16 @@ a {
   cursor: pointer;
   animation: dishes-unveiling 900ms ease-out backwards;
 }
+@media screen and (min-width: 768px) {
+  .dish {
+    grid-template-columns: 1fr 7% 10%;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .dish {
+    grid-template-columns: 1fr 15% 17%;
+  }
+}
 .dish--0 {
   animation-delay: 0ms;
 }
@@ -647,7 +662,7 @@ a {
 }
 .dish__checkbox > .fa-check-circle {
   transform: rotate(0);
-  transition: transform 300ms cubic-bezier(0.85, 0.45, 0.18, 0.99) 100ms;
+  transition: transform 300ms cubic-bezier(0.17, 0.53, 1, 0.73) 50ms;
 }
 .dish:hover {
   box-shadow: 3px 5px 5px #cccccc;
