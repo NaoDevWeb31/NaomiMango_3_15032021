@@ -40,10 +40,13 @@
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
+    width: 50%;
+    margin: auto;
     &__city {
       border: none;
       background: transparent;
       font-size: medium;
+      margin-right: 1rem;
       &::placeholder {
         color: black;
         font-size: 16px;

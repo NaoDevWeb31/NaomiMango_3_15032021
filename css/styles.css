@@ -301,11 +301,14 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
+  width: 50%;
+  margin: auto;
 }
 .localisation__grid__city {
   border: none;
   background: transparent;
   font-size: medium;
+  margin-right: 1rem;
 }
 .localisation__grid__city::placeholder {
   color: black;
