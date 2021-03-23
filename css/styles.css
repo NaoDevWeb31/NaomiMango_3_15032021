@@ -294,20 +294,21 @@ a {
   animation: spinner 500ms linear infinite;
 }
 
-.localisation {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
-}
 .localisation__heading {
   display: none;
 }
-.localisation__search {
+.localisation__grid {
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: center;
+  margin-left: -2rem;
+}
+.localisation__grid__city {
   border: none;
   background: transparent;
   font-size: medium;
 }
-.localisation__search::placeholder {
+.localisation__grid__city::placeholder {
   color: black;
   font-size: 16px;
 }

@@ -33,19 +33,22 @@
 }
 
 .localisation {
-  display: grid;
-  grid-template-columns: auto auto;
-  justify-content: center;
   &__heading {
     display: none;
   }
-  &__search {
-    border: none;
-    background: transparent;
-    font-size: medium;
-    &::placeholder {
-      color: black;
-      font-size: 16px;
+  &__grid {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    margin-left: -2rem;
+    &__city {
+      border: none;
+      background: transparent;
+      font-size: medium;
+      &::placeholder {
+        color: black;
+        font-size: 16px;
+      }
     }
   }
 }
