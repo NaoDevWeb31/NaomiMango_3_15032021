@@ -301,7 +301,6 @@ a {
   display: grid;
   grid-template-columns: auto auto;
   justify-content: center;
-  margin-left: -2rem;
 }
 .localisation__grid__city {
   border: none;
