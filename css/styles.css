@@ -492,6 +492,9 @@ a {
   margin: -0.3rem -0.5rem 0rem -0.5rem;
   overflow: hidden;
 }
+.courses-prev__heading {
+  display: none;
+}
 .courses-prev__image {
   object-fit: cover;
   width: 107%;

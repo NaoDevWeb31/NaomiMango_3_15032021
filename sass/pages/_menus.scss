@@ -4,6 +4,9 @@
   &-prev {
     margin: -0.3rem -0.5rem 0rem -0.5rem;
     overflow: hidden;
+    &__heading {
+      display: none;
+    }
     &__image {
       object-fit: cover;
       width: 107%;
