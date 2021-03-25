@@ -670,16 +670,30 @@ a {
   transform: rotate(0);
   transition: transform 300ms cubic-bezier(0.17, 0.53, 1, 0.73) 50ms;
 }
-.dish:hover {
+@media screen and (min-width: 1024px) {
+  .dish:hover {
+    box-shadow: 3px 5px 5px #cccccc;
+  }
+  .dish:hover > .dish__price {
+    transform: translateX(0);
+  }
+  .dish:hover > .dish__checkbox {
+    transform: translateX(0);
+  }
+  .dish:hover > .dish__checkbox > .fa-check-circle {
+    transform: rotate(1turn);
+  }
+}
+.dish:active, .dish:focus {
   box-shadow: 3px 5px 5px #cccccc;
 }
-.dish:hover > .dish__price {
+.dish:active > .dish__price, .dish:focus > .dish__price {
   transform: translateX(0);
 }
-.dish:hover > .dish__checkbox {
+.dish:active > .dish__checkbox, .dish:focus > .dish__checkbox {
   transform: translateX(0);
 }
-.dish:hover > .dish__checkbox > .fa-check-circle {
+.dish:active > .dish__checkbox > .fa-check-circle, .dish:focus > .dish__checkbox > .fa-check-circle {
   transform: rotate(1turn);
 }
 
