@@ -24,7 +24,10 @@
 <body>
     <header class="header header--menu">
     <!-- FLÈCHE -->
-        <a class="header__return" href="index.html"><i class="fas fa-arrow-left"></i></a>
+        <a class="header__return" href="index.html" title="Retournez sur la page d'accueil" aria-label="homepage">
+            <i class="fas fa-arrow-left"></i>
+            <span class="header__return__text">Page d'accueil</span>
+        </a>
     <!-- LOGO -->
         <img class="header__logo" src="img/logo/ohmyfood@2x.svg" alt="logo du site" title="Ohmyfood.com"/>
     </header>
@@ -39,7 +42,7 @@
         <!-- NOM DU RESTO + CŒUR -->
             <div class="heading">
                 <h2 class="heading__title">La note enchantée</h2>
-                <button type="button" class="menu-prev__btn">
+                <button type="button" class="menu-prev__btn" aria-label="favorite">
                     <i class="far fa-heart empty"></i>
                     <i class="fas fa-heart filled"></i>
                 </button>
