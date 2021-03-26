@@ -213,6 +213,9 @@ a {
   top: 20%;
   left: 3%;
 }
+.header__return__text {
+  display: none;
+}
 .header__logo {
   width: 10rem;
 }

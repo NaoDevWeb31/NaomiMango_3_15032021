@@ -15,6 +15,9 @@
     position: absolute;
     top: 20%;
     left: 3%;
+    &__text {
+      display: none;
+    }
   }
   &__logo {
     width: 10rem;
