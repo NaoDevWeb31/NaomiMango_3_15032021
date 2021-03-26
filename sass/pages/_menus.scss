@@ -141,8 +141,8 @@
       }
     }
   }
-  &:active,
-  &:focus {
+  &:focus,
+  &:active {
     @include box-shadow(focus);
     & > .dish__price {
       transform: translateX(0);

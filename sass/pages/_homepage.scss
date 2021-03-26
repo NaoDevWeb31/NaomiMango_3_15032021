@@ -154,8 +154,14 @@
     "heading heart";
   grid-template-columns: 80% 20%;
   @include box-shadow(normal);
-  transform: scale(0.95);
-  transition: transform 250ms ease-in-out;
+  @include breakpoints(desktop) {
+    transform: scale(0.95);
+    transition: transform 250ms ease-in-out;
+    &:hover {
+      @include box-shadow(hover);
+      transform: scale(1);
+    }
+  }
   &__image {
     position: relative;
     grid-area: image;
@@ -195,10 +201,6 @@
       font-weight: 300;
       margin-top: 0;
     }
-  }
-  &:hover {
-    @include box-shadow(hover);
-    transform: scale(1);
   }
   &:active {
     color: $color-secondary;
