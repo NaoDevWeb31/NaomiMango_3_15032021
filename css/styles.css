@@ -97,10 +97,6 @@ a {
   font-size: 1.2rem;
 }
 
-.fa-heart {
-  font-size: 1.5rem;
-}
-
 .fa-check-circle {
   color: white;
   font-size: 1.3rem;
@@ -156,22 +152,17 @@ a {
   position: relative;
   margin: auto 1.5rem auto auto;
 }
+.menu-prev__btn__img {
+  width: 1.5rem;
+}
 .menu-prev__btn > .empty {
   opacity: 1;
-  transition: opacity 300ms cubic-bezier(1, 0, 0.4, 1) 250ms;
+  transition: opacity 250ms cubic-bezier(1, 0, 0.4, 1) 200ms;
 }
 .menu-prev__btn > .filled {
-  content: "";
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background: linear-gradient(170deg, #ff79da, #9356dc);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  margin: 0;
+  top: 0.2rem;
+  left: 0.4rem;
   opacity: 0;
   transform: scale(0);
   transform-origin: bottom;

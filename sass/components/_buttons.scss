@@ -25,17 +25,17 @@
   cursor: pointer;
   position: relative;
   margin: auto 1.5rem auto auto;
+  &__img {
+    width: 1.5rem;
+  }
   & > .empty {
     opacity: 1;
-    transition: opacity 300ms cubic-bezier(1, 0, 0.4, 1) 250ms;
+    transition: opacity 250ms cubic-bezier(1, 0, 0.4, 1) 200ms;
   }
   & > .filled {
-    @include pseudo-pos;
-    background: $colors-gradient;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin: 0;
+    position: absolute;
+    top: 0.2rem;
+    left: 0.4rem;
     opacity: 0;
     transform: scale(0);
     transform-origin: bottom;
