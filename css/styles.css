@@ -315,15 +315,6 @@ a {
   width: 50%;
   margin: auto;
 }
-.localisation__grid__city {
-  border: none;
-  background: transparent;
-  font-size: medium;
-}
-.localisation__grid__city::placeholder {
-  color: black;
-  font-size: 16px;
-}
 
 .presentation {
   text-align: center;
