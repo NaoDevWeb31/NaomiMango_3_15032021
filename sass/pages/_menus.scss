@@ -70,12 +70,12 @@
     "heading heading checkbox"
     "caption price checkbox";
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 1fr 15% 17%;
+  grid-template-columns: 84% 6% 18%;
   @include breakpoints(tab) {
-    grid-template-columns: 1fr 7% 10%;
+    grid-template-columns: 1fr 8% 10%;
   }
   @include breakpoints(desktop) {
-    grid-template-columns: 1fr 15% 17%;
+    grid-template-columns: 84% 6% 18%;
   }
   background: white;
   border-radius: $bd-rad;
@@ -86,10 +86,13 @@
   @include dishes-unveiling;
   &__heading {
     grid-area: heading;
-    margin: 0.8rem 0.8rem 0rem 0.8rem;
+    margin: 0.8rem 0rem 0rem 0.8rem;
     font-weight: 500;
     font-size: 18px;
     @include text-overflow;
+    @include breakpoints(desktop) {
+      margin-right: -2rem;
+    }
   }
   &__caption {
     grid-area: caption;
@@ -119,7 +122,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transform: translateX(100%);
+    transform: translateX(105%);
+    opacity: 0;
     transform-origin: right top;
     transition: transform 400ms cubic-bezier(0.86, 0.06, 0.16, 0.84);
     & > .fa-check-circle {
@@ -129,12 +133,17 @@
   }
   @include breakpoints(desktop) {
     &:hover {
+      grid-template-columns: 66% 16% 18%;
       @include box-shadow(hover);
+      & > .dish__heading {
+        margin-right: 3rem;
+      }
       & > .dish__price {
         transform: translateX(0);
       }
       & > .dish__checkbox {
         transform: translateX(0);
+        opacity: 1;
         & > .fa-check-circle {
           transform: rotate(1turn);
         }
@@ -143,12 +152,17 @@
   }
   &:focus,
   &:active {
+    grid-template-columns: 66% 16% 18%;
     @include box-shadow(focus);
+    & > .dish__heading {
+      margin-right: 3rem;
+    }
     & > .dish__price {
       transform: translateX(0);
     }
     & > .dish__checkbox {
       transform: translateX(0);
+      opacity: 1;
       & > .fa-check-circle {
         transform: rotate(1turn);
       }

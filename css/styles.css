@@ -562,7 +562,7 @@ a {
   display: grid;
   grid-template-areas: "heading heading checkbox" "caption price checkbox";
   grid-template-rows: repeat(2, 1fr);
-  grid-template-columns: 1fr 15% 17%;
+  grid-template-columns: 84% 6% 18%;
   background: white;
   border-radius: 20px;
   box-shadow: 3px 5px 5px #e6e6e6;
@@ -573,12 +573,12 @@ a {
 }
 @media screen and (min-width: 768px) {
   .dish {
-    grid-template-columns: 1fr 7% 10%;
+    grid-template-columns: 1fr 8% 10%;
   }
 }
 @media screen and (min-width: 1024px) {
   .dish {
-    grid-template-columns: 1fr 15% 17%;
+    grid-template-columns: 84% 6% 18%;
   }
 }
 .dish--0 {
@@ -613,12 +613,17 @@ a {
 }
 .dish__heading {
   grid-area: heading;
-  margin: 0.8rem 0.8rem 0rem 0.8rem;
+  margin: 0.8rem 0rem 0rem 0.8rem;
   font-weight: 500;
   font-size: 18px;
   text-overflow: ellipsis;
   overflow: hidden;
   white-space: nowrap;
+}
+@media screen and (min-width: 1024px) {
+  .dish__heading {
+    margin-right: -2rem;
+  }
 }
 .dish__caption {
   grid-area: caption;
@@ -652,7 +657,8 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  transform: translateX(100%);
+  transform: translateX(105%);
+  opacity: 0;
   transform-origin: right top;
   transition: transform 400ms cubic-bezier(0.86, 0.06, 0.16, 0.84);
 }
@@ -662,26 +668,36 @@ a {
 }
 @media screen and (min-width: 1024px) {
   .dish:hover {
+    grid-template-columns: 66% 16% 18%;
     box-shadow: 3px 5px 5px #cccccc;
+  }
+  .dish:hover > .dish__heading {
+    margin-right: 3rem;
   }
   .dish:hover > .dish__price {
     transform: translateX(0);
   }
   .dish:hover > .dish__checkbox {
     transform: translateX(0);
+    opacity: 1;
   }
   .dish:hover > .dish__checkbox > .fa-check-circle {
     transform: rotate(1turn);
   }
 }
 .dish:focus, .dish:active {
+  grid-template-columns: 66% 16% 18%;
   box-shadow: 3px 5px 5px #cccccc;
+}
+.dish:focus > .dish__heading, .dish:active > .dish__heading {
+  margin-right: 3rem;
 }
 .dish:focus > .dish__price, .dish:active > .dish__price {
   transform: translateX(0);
 }
 .dish:focus > .dish__checkbox, .dish:active > .dish__checkbox {
   transform: translateX(0);
+  opacity: 1;
 }
 .dish:focus > .dish__checkbox > .fa-check-circle, .dish:active > .dish__checkbox > .fa-check-circle {
   transform: rotate(1turn);
