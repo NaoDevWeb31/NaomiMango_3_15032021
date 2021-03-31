@@ -6,7 +6,7 @@
 
 Intégrer les maquettes responsive d'Ohmyfood, un site 100% mobile proposant le menu de 4 grands restaurants parisiens. Les utilisateurs pourront composer leur propre menu parmi un répertoire de restaurants gastronomiques et pourront réserver.
 
-![Maquette]()
+![Maquette](https://github.com/NaoDevWeb31/NaomiMango_3_15032021/blob/main/img/templates/Accueil.png)
 
 ## Contraintes techniques
 
@@ -21,11 +21,11 @@ Intégrer les maquettes responsive d'Ohmyfood, un site 100% mobile proposant le 
 - Aucun framework ne devra être utilisé
 - Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML
 - 5 maquettes mobile sont fournies :
-  - [Accueil]()
-  - [Menu - La palette du goût]()
-  - [Menu - La note enchantée]()
-  - [Menu - À la française]()
-  - [Menu - Le délice des sens]()
+  - [Accueil](https://github.com/NaoDevWeb31/NaomiMango_3_15032021/blob/main/img/templates/Accueil.png)
+  - [Menu - La palette du goût](https://github.com/NaoDevWeb31/NaomiMango_3_15032021/blob/main/img/templates/Menu%20-%20La%20palette%20du%20go%C3%BBt.png)
+  - [Menu - La note enchantée](https://github.com/NaoDevWeb31/NaomiMango_3_15032021/blob/main/img/templates/Menu%20-%20La%20note%20enchant%C3%A9e.png)
+  - [Menu - À la française](https://github.com/NaoDevWeb31/NaomiMango_3_15032021/blob/main/img/templates/Menu%20-%20%C3%80%20la%20fran%C3%A7aise.png)
+  - [Menu - Le délice des sens](https://github.com/NaoDevWeb31/NaomiMango_3_15032021/blob/main/img/templates/Menu%20-%20Le%20d%C3%A9lice%20des%20sens.png)
 - Le site devra être développer en utilisant une approche mobile-first
 - Le site devra également être adapté sur tablette et desktop avec une mise en page libre
 - Les pages devront passer la validation W3C en HTML et CSS sans erreur
