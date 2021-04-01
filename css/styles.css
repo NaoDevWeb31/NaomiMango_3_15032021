@@ -240,7 +240,7 @@ a {
   margin: 0.3rem 0rem;
   font-size: 15px;
 }
-.footer__list > .list__item.email__link:hover, .footer__list > .list__item.email__link:active {
+.footer__list > .email__link:hover, .footer__list > .email__link:active {
   font-weight: bold;
 }
 
